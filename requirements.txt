@@ -24,3 +24,4 @@ idna
 python-dotenv
 django-heroku
 python-bitcoinrpc==1.0
+gunicorn
