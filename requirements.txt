@@ -23,3 +23,4 @@ httplib2
 idna
 python-dotenv
 django-heroku
+python-bitcoinrpc==1.0
