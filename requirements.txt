@@ -22,3 +22,4 @@ python-decouple
 httplib2
 idna
 python-dotenv
+django-heroku
