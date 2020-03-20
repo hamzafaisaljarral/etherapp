@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+import dj_database_url 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -134,3 +135,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
 )
+prod_db  =  dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(prod_db)
