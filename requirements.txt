@@ -20,3 +20,4 @@ djangorestframework
 dj-database-url
 python-decouple
 httplib2
+idna
