@@ -19,3 +19,4 @@ web3
 djangorestframework
 dj-database-url
 python-decouple
+httplib2
