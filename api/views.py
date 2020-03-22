@@ -25,3 +25,15 @@ def getAccountList(request):
     if request.method == 'GET':
         return Response({"status": 2000, "accountList": list})
     return Response({"message": "oppps something went wrong try to contact admin"})
+
+    @api_view(['GET', 'POST'])
+def sendTranscation(request):
+    send_to=request.data['send_to'];
+    send_from=request.data['send_from'];
+    amount=request.data['amount']
+
+    address=instance.sendfrom(sendtp,sendfrom,amount)
+
+    if request.method == 'POST':
+        return Response({"status": 2000, "account":sendto , "amount":amount,"message":"successfully transferred"})
+    return Response({"message": "oppps something went wrong try to contact admin"})
