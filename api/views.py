@@ -26,7 +26,7 @@ def getAccountList(request):
         return Response({"status": 2000, "accountList": list})
     return Response({"message": "oppps something went wrong try to contact admin"})
 
-    @api_view(['GET', 'POST'])
+@api_view(['GET', 'POST'])
 def sendTranscation(request):
     send_to=request.data['send_to'];
     send_from=request.data['send_from'];
